@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const AuthorizationHeader = () => {
+  const [header, setHeader] = useState<any>("");
   const [newAuthorizationHeader, setNewAuthorizationHeader] = useState<any>("");
   const authorizationHeader = "lskfjdlkgnldkfdflgkdfl;gbkfghgodrsfjn";
 
@@ -12,7 +13,7 @@ const AuthorizationHeader = () => {
   const fetchAuthorizationHeader = async () => {
     try {
       const res = await axios.get("api/authorizationheader", { headers, withCredentials: true });
-      setNewAuthorizationHeader(res.headers.get("authorization"));
+      setNewAuthorizationHeader(res.headers["authorization"]);
     } catch (error) {
       console.error("Error fetching authorization header:", error);
     }

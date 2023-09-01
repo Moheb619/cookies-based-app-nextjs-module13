@@ -13,9 +13,6 @@ const Nav = () => {
         <Link href={"/setCookies"}>Set Cookies</Link>
       </div>
       <div className="hover:bg-black hover:text-white">
-        <Link href={"/readCookies"}>Get Cookies</Link>
-      </div>
-      <div className="hover:bg-black hover:text-white">
         <Link href={"/jsonResponse"}>Get JSON Response</Link>
       </div>
       <div className="hover:bg-black hover:text-white">
