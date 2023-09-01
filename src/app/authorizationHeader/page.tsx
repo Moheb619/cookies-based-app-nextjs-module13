@@ -23,9 +23,22 @@ const AuthorizationHeader = () => {
   }, []);
 
   return (
-    <div>
-      <p>Original Authorization Header: {authorizationHeader}</p>
-      <p>New Authorization Header: {newAuthorizationHeader}</p>
+    <div className="flex flex-col items-center mt-20 text-center">
+      <p>
+        <span className="font-bold my-5">Original Authorization Header: </span>
+        <br />
+        <br />
+        {authorizationHeader}
+      </p>
+      <br />
+      <br />
+      <br />
+      <p>
+        <span className="font-bold">New Authorization Header: </span>
+        <br />
+        <br />
+        {newAuthorizationHeader}
+      </p>
     </div>
   );
 };

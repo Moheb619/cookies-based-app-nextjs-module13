@@ -3,7 +3,7 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <div className="flex flex-row space-x-10 items-center justify-center">
+    <div className="flex flex-row space-x-10 items-center justify-center bg-gray-500 text-white p-5">
       <div className="hover:bg-black hover:text-white">
         {" "}
         <Link href={"/"}>Home</Link>
